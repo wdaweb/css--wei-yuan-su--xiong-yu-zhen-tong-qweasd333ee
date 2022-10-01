@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>bear</title>
+  <style>
+    .bear1 {
+      width: 400px;
+      height: 400px;
+      background: black;
+      border-radius: 100%;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+
+    .bear1::before {
+      content: "";
+      width: 70px;
+      height: 70px;
+      background: black;
+      border-radius: 100%;
+      position: absolute;
+      left: 5%;
+    }
+
+    .bear1::after {
+      content: "";
+      width: 70px;
+      height: 70px;
+      background: black;
+      border-radius: 100%;
+      position: absolute;
+      left: 95%;
+      transform: translate(-100%);
+      z-index: -1;
+    }
+
+    .bear2 {
+      width: 180px;
+      height: 120px;
+      background: white;
+      border-radius: 100%;
+      position: absolute;
+      top: 55%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+
+    .bear2::before {
+      content: "";
+      width: 45px;
+      height: 45px;
+      background: white;
+      border-radius: 100%;
+      position: absolute;
+      right: 190px;
+      bottom: 200px;
+      transform: translate(-50%, -50%);
+    }
+
+    .bear2::after {
+      content: "";
+      width: 45px;
+      height: 45px;
+      background: white;
+      border-radius: 100%;
+      position: absolute;
+      left: 235px;
+      bottom: 200px;
+      transform: translate(-50%, -50%);
+    }
+
+    .bear3 {
+      width: 100px;
+      height: 40px;
+      background: black;
+      border-radius: 100%;
+      position: absolute;
+      top: 59%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+
+    .bear3::before {
+      content: "";
+      width: 100px;
+      height: 100px;
+      background: rgb(255, 0, 0);
+      border-radius: 100%;
+      position: absolute;
+      right: 120px;
+      transform: translate(-50%, -50%);
+    }
+
+    .bear3::after {
+      content: "";
+      width: 100px;
+      height: 100px;
+      background: rgb(255, 0, 0);
+      border-radius: 100%;
+      position: absolute;
+      left: 220px;
+      transform: translate(-50%, -50%);
+    }
+
+    .bear4 {
+      width: 70px;
+      height: 70px;
+      background: white;
+      border-radius: 100%;
+      position: absolute;
+      top: 32%;
+      left: 32%;
+      transform: translate(-50%, -50%);
+    }
+
+    .bear4::before {
+      content: "";
+      width: 70px;
+      height: 70px;
+      background: white;
+      border-radius: 100%;
+      position: absolute;
+      top: 50%;
+      left: 180px;
+      transform: translate(-50%, -50%);
+    }
+
+    .bear4::after {
+      content: "";
+      width: 50px;
+      height: 50px;
+      background: black;
+      border-radius: 100%;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+
+    .bear5 {
+      width: 50px;
+      height: 50px;
+      background: black;
+      border-radius: 100%;
+      position: absolute;
+      top: 32%;
+      left: 274px;
+      transform: translate(-50%, -50%);
+    }
+
+    .bear5::before {
+      content: "";
+      width: 40px;
+      height: 25px;
+      background: black;
+      border-radius: 100%;
+      position: absolute;
+      top: 153%;
+      right: 60px;
+      transform: translate(-50%, -50%);
+    }
+
+    .bear6 {
+      width: 50px;
+      height: 0;
+      background: white;
+      position: absolute;
+      border-top: 50px solid white;
+      border-left: 60px solid;
+      border-right: 60px solid;
+      top: 85%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+
+    .bear6::before {
+      content: "";
+      width: 0;
+      height: 0;
+      position: absolute;
+      border-top: 50px solid black;
+      border-bottom: 50px solid transparent;
+      border-left: 60px solid transparent;
+      border-right: 60px solid transparent;
+      left: 50%;
+      transform: translate(-50%, -68%);
+    }
+
+  </style>
+</head>
+<body>
+  <div class="bear1">
+    <div class="bear2"></div>
+    <div class="bear3"></div>
+    <div class="bear4"></div>
+    <div class="bear5"></div>
+    <div class="bear6"></div>
+  </div>
+</body>
+</html>
